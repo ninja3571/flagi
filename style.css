@@ -1,0 +1,26 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "jeden  dwa"
+    "trzy  cztery";
+    grid-template-rows:20vh 80vh ;
+    grid-template-columns:80% 20% ;
+    margin: 0px;
+
+}
+#div1{
+    grid-area: "jeden";
+    background-color: darkslategray;
+}
+#div2{
+    grid-area: "dwa";
+    background-color: darkolivegreen;
+}
+#div3{
+    grid-area: "trzy";
+    background-color: olive;
+}
+#div4{
+    grid-area: "cztery";
+    background-color: rgb(29, 163, 112);
+}
