@@ -11,14 +11,15 @@ body{
 #div1{
     grid-area: "jeden";
     background-color: darkslategray;
+    color: deepskyblue;
 }
 #div2{
     grid-area: "dwa";
-    background-color: darkolivegreen;
+    background-color: cadetblue;
 }
 #div3{
     grid-area: "trzy";
-    background-color: olive;
+    background-color: midnightblue;
 }
 #div4{
     grid-area: "cztery";

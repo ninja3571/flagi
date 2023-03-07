@@ -34,10 +34,12 @@ function sto_eu(){
     kraj_eu.appendChild(flag_eu)
 
 }
-//function serca(){
-//    const serce1 =document.createElement("img")
-//    const serce2 =document.createElement("img")
-//    const serce3 =document.createElement("img")
-//
-//
-//}
+function serca(){
+    const serce1 =document.createElement("img")
+    const serce2 =document.createElement("img")
+    const serce3 =document.createElement("img")
+
+    serce1.setAttribute("src",'serce.png')
+    serce2.setAttribute("src",'serce.png')
+    serce3.setAttribute("src",'serce.png')
+}
