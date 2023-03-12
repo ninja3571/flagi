@@ -23,5 +23,13 @@ body{
 }
 #div4{
     grid-area: "cztery";
-    background-color: rgb(29, 163, 112);
+    background-color: rgb(18, 133, 88);
+}
+.flaga{
+    height: 300px;
+    width: 300px;
+}
+.gra{
+    background-color: rgb(34, 34, 34);
+    color: cornsilk;
 }
