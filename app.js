@@ -12,119 +12,155 @@ function losuj(){
     return Math.floor(Math.random()*max);
 }
 
-function los(){
-    return Math.floor(Math.random()*4)
+function los_sto(){
+    return Math.floor(Math.random()*4)+1
 }
 
-function sto_eu(){
+function sto_poc(){
     clearInterval
     const gra = document.getElementById("div3")
     gra.classList.add("gra")
-
+    
+    document.getElementById("1").innerHTML=""
+    document.getElementById("2").innerHTML=""
+    document.getElementById("3").innerHTML=""
+    document.getElementById("4").innerHTML=""
     gra.innerHTML =""
-
-
-    if(kraj_eu.region=="Europe"){
-        var kraj_eu = json[losuj()]
-
-        const div_eu = document.createElement("div")
-        // kraj_eu.classList.add("slide-in-fwd-center")
-     
-         const nazwa_eu = document.createElement("h1")
-         const reg_eu = document.createElement("h2")
-         const flag_eu = document.createElement("img")
-     
-         nazwa_eu.innerHTML = kraj_eu.name
-         reg_eu.innerHTML = kraj_eu.region
-         flag_eu.setAttribute("src",kraj_eu.flag)
-         flag_eu.classList.add("flaga")
-     
-         gra.appendChild(div_eu)
-     
-         div_eu.appendChild(nazwa_eu)
-         div_eu.appendChild(flag_eu)
-         div_eu.appendChild(reg_eu)
-     
-         console.log(kraj_eu)
-    }
-
-    if(kraj_eu.region=="Asia"){
-        var kraj_as = json[losuj()]
-
-        const div_as = document.createElement("div")
-        // kraj_as.classList.add("slide-in-fwd-center")
-     
-         const nazwa_as = document.createElement("h1")
-         const reg_as = document.createElement("h2")
-         const flag_as = document.createElement("img")
-     
-         nazwa_as.innerHTML = kraj_as.name
-         reg_as.innerHTML = kraj_as.region
-         flag_as.setAttribute("src",kraj_as.flag)
-         flag_as.classList.add("flaga")
-     
-         gra.appendChild(div_as)
-     
-         div_as.appendChild(nazwa_as)
-         div_as.appendChild(flag_as)
-         div_as.appendChild(reg_as)
-     
-         console.log(kraj_as)
-    }
-    if(kraj_eu.region=="North America"){
-        var kraj_amn = json[losuj()]
-
-        const div_amn = document.createElement("div")
-        // kraj_amn.classList.add("slide-in-fwd-center")
-     
-         const nazwa_amn = document.createElement("h1")
-         const reg_amn = document.createElement("h2")
-         const flag_amn = document.createElement("img")
-     
-         nazwa_amn.innerHTML = kraj_amn.name
-         reg_amn.innerHTML = kraj_amn.region
-         flag_amn.setAttribute("src",kraj_amn.flag)
-         flag_amn.classList.add("flaga")
-     
-         gra.appendChild(div_amn)
-     
-         div_amn.appendChild(nazwa_amn)
-         div_amn.appendChild(flag_amn)
-         div_amn.appendChild(reg_amn)
-     
-         console.log(kraj_amn)
-    }
-    if(kraj_eu.region=="South America"){
-        var kraj_ams = json[losuj()]
-
-        const div_ams = document.createElement("div")
-        // kraj_amn.classList.add("slide-in-fwd-center")
-     
-         const nazwa_ams = document.createElement("h1")
-         const reg_ams = document.createElement("h2")
-         const flag_ams = document.createElement("img")
-     
-         nazwa_ams.innerHTML = kraj_ams.name
-         reg_ams.innerHTML = kraj_ams.region
-         flag_ams.setAttribute("src",kraj_ams.flag)
-         flag_ams.classList.add("flaga")
-     
-         gra.appendChild(div_ams)
-     
-         div_amn.appendChild(nazwa_ams)
-         div_amn.appendChild(flag_ams)
-         div_amn.appendChild(reg_ams)
-     
-         console.log(kraj_ams)
-    }
-
+    
+    document.getElementById("zycia").innerHTML="Pozostały " + proby +" życia"
+    document.getElementById("punkty").innerHTML=punkty
+    
+    
+    var kraj = json[losuj()]
+    var kraj_1 = json[losuj()]
+    var kraj_2 = json[losuj()]
+    var kraj_3 = json[losuj()]
+    var kraj_4 = json[losuj()]
+    
+    const div = document.createElement("div")
+    div.classList.add("slide-in-fwd-center")
+    div.classList.add("kwadrat")
+    
+    const nazwa = document.createElement("h1")
+    const reg = document.createElement("h2")
+    const flag = document.createElement("img")
+    
+    nazwa.innerHTML = kraj.name
+    reg.innerHTML = kraj.region
+    flag.setAttribute("src",kraj.flag)
+    flag.classList.add("flaga")
+    
+    gra.appendChild(div)
+    
+    div.appendChild(nazwa)
+    div.appendChild(flag)
+    div.appendChild(reg)
+    
+    console.log(kraj)
+    console.log(los_sto())
+    
+    document.getElementById("1").innerHTML=kraj_1.capital
+    document.getElementById("2").innerHTML=kraj_2.capital
+    document.getElementById("3").innerHTML=kraj_3.capital
+    document.getElementById("4").innerHTML=kraj_4.capital
+    document.getElementById(los_sto()).innerHTML=kraj.capital
+    
+    console.log(kraj.capital)
+    
 }
-function serca(){
-    const serce1 =document.createElement("img")
-    const serce2 =document.createElement("img")
-    const serce3 =document.createElement("img")
+function sto_kon(){
+    clearInterval
+    const gra = document.getElementById("div3")
+    gra.classList.add("gra")
+    
+    
+    document.getElementById("1").innerHTML=""
+    document.getElementById("2").innerHTML=""
+    document.getElementById("3").innerHTML=""
+    document.getElementById("4").innerHTML=""
+    gra.innerHTML =""
+    
+    document.getElementById("zycia").innerHTML="Pozostały " + proby +" życia"
+    document.getElementById("punkty").innerHTML=punkty
+    
+    
+    var kraj = json[losuj()]
+    var kraj_1 = json[losuj()]
+    var kraj_2 = json[losuj()]
+    var kraj_3 = json[losuj()]
+    var kraj_4 = json[losuj()]
+    
+    const div = document.createElement("div")
+    div.classList.add("slide-in-fwd-center")
+    div.classList.add("kwadrat")
+    
+    const nazwa = document.createElement("h1")
+    const reg = document.createElement("h2")
+    const flag = document.createElement("img")
+    
+    nazwa.innerHTML = kraj.name
+    reg.innerHTML = kraj.region
+    flag.setAttribute("src",kraj.flag)
+    flag.classList.add("flaga")
+    
+    gra.appendChild(div)
+    
+    div.appendChild(nazwa)
+    div.appendChild(flag)
+    div.appendChild(reg)
+    
+    console.log(kraj)
+    console.log(los_sto())
+    
+    document.getElementById("1").innerHTML=kraj_1.capital
+    document.getElementById("2").innerHTML=kraj_2.capital
+    document.getElementById("3").innerHTML=kraj_3.capital
+    document.getElementById("4").innerHTML=kraj_4.capital
+    document.getElementById(los_sto()).innerHTML=kraj.capital
+    
+    console.log(kraj.capital)
+}
 
-    serce1.setAttribute("src",'serce.png')
-    serce2.setAttribute("src",'serce.png')
-    serce3.setAttribute("src",'serce.png')
+var proby = "3"
+var punkty ="0"
+
+function spr1(){
+    if(los_sto()==1){
+        punkty=punkty+1
+        sto_kon()
+    }
+    else{
+        proby=proby-1
+        sto_kon()
+    }
+}
+function spr2(){
+    if(los_sto()==2){
+        punkty++
+        sto_kon()
+    }
+    else{
+        proby--
+        sto_kon()
+    }
+}
+function spr3(){
+    if(los_sto()==3){
+        punkty++
+        sto_kon()
+    }
+    else{
+        proby--
+        sto_kon()
+    }
+}
+function spr4(){
+    if(los_sto()==4){
+        punkty++
+        sto_kon()
+    }
+    else{
+        proby--
+        sto_kon()
+    }
 }

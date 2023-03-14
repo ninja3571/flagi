@@ -6,24 +6,36 @@ body{
     grid-template-rows:20vh 80vh ;
     grid-template-columns:80% 20% ;
     margin: 0px;
-
+    overflow: hidden;
 }
 #div1{
     grid-area: "jeden";
-    background-color: darkslategray;
+    background-color: rgb(39, 24, 41);
     color: deepskyblue;
+    border: 2px solid black;
 }
 #div2{
     grid-area: "dwa";
-    background-color: cadetblue;
+    background-color: rgb(27, 44, 44);
+    border: 2px solid black;
+    color: aqua;
 }
 #div3{
     grid-area: "trzy";
-    background-color: midnightblue;
+    display: flex;
+    background-color: rgb(16, 16, 71);
+    border-top: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
 #div4{
     grid-area: "cztery";
-    background-color: rgb(18, 133, 88);
+    background-color: rgb(16, 16, 71);
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 .flaga{
     height: 300px;
@@ -33,3 +45,13 @@ body{
     background-color: rgb(34, 34, 34);
     color: cornsilk;
 }
+.kwadrat{
+    border: 2px solid aquamarine;
+    width: 300px;
+}
+/*.good{
+
+}
+.bad{
+
+}*/
