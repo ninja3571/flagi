@@ -64,7 +64,7 @@ function sto_poc(){
     document.getElementById("4").innerHTML=kraj_4.capital
     document.getElementById(los_sto()).innerHTML=kraj.capital
     
-    console.log(kraj.capital)
+    console.log("stolica to -- "+kraj.capital)
     
 }
 function sto_kon(){
@@ -108,7 +108,7 @@ function sto_kon(){
     div.appendChild(reg)
     
     console.log(kraj)
-    console.log(los_sto())
+    console.log("liczba wylosowana "+los_sto())
     
     document.getElementById("1").innerHTML=kraj_1.capital
     document.getElementById("2").innerHTML=kraj_2.capital
@@ -116,7 +116,7 @@ function sto_kon(){
     document.getElementById("4").innerHTML=kraj_4.capital
     document.getElementById(los_sto()).innerHTML=kraj.capital
     
-    console.log(kraj.capital)
+    console.log("stolica to -- "+kraj.capital)
 }
 
 var proby = "3"
@@ -135,7 +135,6 @@ function spr1(){
             document.getElementById("2").innerHTML=""
             document.getElementById("3").innerHTML=""
             document.getElementById("4").innerHTML=""
-            gra.innerHTML =""
         }
     }
 }
@@ -147,6 +146,12 @@ function spr2(){
     else if(los_sto()!=2){
         proby--
         sto_kon()
+        while(proby<=0){
+            document.getElementById("1").innerHTML=""
+            document.getElementById("2").innerHTML=""
+            document.getElementById("3").innerHTML=""
+            document.getElementById("4").innerHTML=""
+        }
     }
 }
 function spr3(){
@@ -157,6 +162,12 @@ function spr3(){
     else if(los_sto()!=3){
         proby--
         sto_kon()
+        while(proby<=0){
+            document.getElementById("1").innerHTML=""
+            document.getElementById("2").innerHTML=""
+            document.getElementById("3").innerHTML=""
+            document.getElementById("4").innerHTML=""
+        }
     }
 }
 function spr4(){
@@ -167,5 +178,11 @@ function spr4(){
     else if(los_sto()!=4){
         proby--
         sto_kon()
+        while(proby<=0){
+            document.getElementById("1").innerHTML=""
+            document.getElementById("2").innerHTML=""
+            document.getElementById("3").innerHTML=""
+            document.getElementById("4").innerHTML=""
+        }
     }
 }
