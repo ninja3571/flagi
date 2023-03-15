@@ -17,7 +17,6 @@ function los_sto(){
 }
 
 function sto_poc(){
-    clearInterval
     const gra = document.getElementById("div3")
     gra.classList.add("gra")
     
@@ -57,7 +56,7 @@ function sto_poc(){
     div.appendChild(reg)
     
     console.log(kraj)
-    console.log(los_sto())
+    console.log("liczba wylosowana "+los_sto())
     
     document.getElementById("1").innerHTML=kraj_1.capital
     document.getElementById("2").innerHTML=kraj_2.capital
@@ -69,7 +68,6 @@ function sto_poc(){
     
 }
 function sto_kon(){
-    clearInterval
     const gra = document.getElementById("div3")
     gra.classList.add("gra")
     
@@ -126,12 +124,19 @@ var punkty ="0"
 
 function spr1(){
     if(los_sto()==1){
-        punkty=punkty+1
+        punkty++
         sto_kon()
     }
-    else{
-        proby=proby-1
+    else if(los_sto()!=1){
+        proby--
         sto_kon()
+        while(proby<=0){
+            document.getElementById("1").innerHTML=""
+            document.getElementById("2").innerHTML=""
+            document.getElementById("3").innerHTML=""
+            document.getElementById("4").innerHTML=""
+            gra.innerHTML =""
+        }
     }
 }
 function spr2(){
@@ -139,7 +144,7 @@ function spr2(){
         punkty++
         sto_kon()
     }
-    else{
+    else if(los_sto()!=2){
         proby--
         sto_kon()
     }
@@ -149,7 +154,7 @@ function spr3(){
         punkty++
         sto_kon()
     }
-    else{
+    else if(los_sto()!=3){
         proby--
         sto_kon()
     }
@@ -159,7 +164,7 @@ function spr4(){
         punkty++
         sto_kon()
     }
-    else{
+    else if(los_sto()!=4){
         proby--
         sto_kon()
     }
