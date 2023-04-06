@@ -13,10 +13,11 @@ function losuj(){
 }
 
 function los_sto(){
-    return Math.floor(Math.random()*4)+1
+    return Math.floor(Math.random()*3)
 }
 
 function sto_poc(){
+    proby=3
     const gra = document.getElementById("div3")
     gra.classList.add("gra")
     
@@ -117,12 +118,29 @@ function sto_kon(){
     document.getElementById(los_sto()).innerHTML=kraj.capital
     
     console.log("stolica to -- "+kraj.capital)
+
 }
 
 var proby = "3"
 var punkty ="0"
 
 function spr1(){
+    if(los_sto()==0){
+        punkty++
+        sto_kon()
+    }
+    else if(los_sto()!=0){
+        proby--
+        sto_kon()
+        while(proby<=0){
+            document.getElementById("1").innerHTML=""
+            document.getElementById("2").innerHTML=""
+            document.getElementById("3").innerHTML=""
+            document.getElementById("4").innerHTML=""
+        }
+    }
+}
+function spr2(){
     if(los_sto()==1){
         punkty++
         sto_kon()
@@ -138,7 +156,7 @@ function spr1(){
         }
     }
 }
-function spr2(){
+function spr3(){
     if(los_sto()==2){
         punkty++
         sto_kon()
@@ -154,28 +172,12 @@ function spr2(){
         }
     }
 }
-function spr3(){
+function spr4(){
     if(los_sto()==3){
         punkty++
         sto_kon()
     }
     else if(los_sto()!=3){
-        proby--
-        sto_kon()
-        while(proby<=0){
-            document.getElementById("1").innerHTML=""
-            document.getElementById("2").innerHTML=""
-            document.getElementById("3").innerHTML=""
-            document.getElementById("4").innerHTML=""
-        }
-    }
-}
-function spr4(){
-    if(los_sto()==4){
-        punkty++
-        sto_kon()
-    }
-    else if(los_sto()!=4){
         proby--
         sto_kon()
         while(proby<=0){
