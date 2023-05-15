@@ -21,10 +21,10 @@ function sto_poc(){
     const gra = document.getElementById("div3")
     gra.classList.add("gra")
     
+    document.getElementById("0").innerHTML=""
     document.getElementById("1").innerHTML=""
     document.getElementById("2").innerHTML=""
     document.getElementById("3").innerHTML=""
-    document.getElementById("4").innerHTML=""
     gra.innerHTML =""
     
     document.getElementById("zycia").innerHTML="Pozostały " + proby +" życia"
@@ -59,10 +59,10 @@ function sto_poc(){
     console.log(kraj)
     console.log("liczba wylosowana "+los_sto())
     
-    document.getElementById("1").innerHTML=kraj_1.capital
-    document.getElementById("2").innerHTML=kraj_2.capital
-    document.getElementById("3").innerHTML=kraj_3.capital
-    document.getElementById("4").innerHTML=kraj_4.capital
+    document.getElementById("0").innerHTML=kraj_1.capital
+    document.getElementById("1").innerHTML=kraj_2.capital
+    document.getElementById("2").innerHTML=kraj_3.capital
+    document.getElementById("3").innerHTML=kraj_4.capital
     document.getElementById(los_sto()).innerHTML=kraj.capital
     
     console.log("stolica to -- "+kraj.capital)
@@ -73,10 +73,10 @@ function sto_kon(){
     gra.classList.add("gra")
     
     
+    document.getElementById("0").innerHTML=""
     document.getElementById("1").innerHTML=""
     document.getElementById("2").innerHTML=""
     document.getElementById("3").innerHTML=""
-    document.getElementById("4").innerHTML=""
     gra.innerHTML =""
     
     document.getElementById("zycia").innerHTML="Pozostały " + proby +" życia"
@@ -111,10 +111,10 @@ function sto_kon(){
     console.log(kraj)
     console.log("liczba wylosowana "+los_sto())
     
-    document.getElementById("1").innerHTML=kraj_1.capital
-    document.getElementById("2").innerHTML=kraj_2.capital
-    document.getElementById("3").innerHTML=kraj_3.capital
-    document.getElementById("4").innerHTML=kraj_4.capital
+    document.getElementById("0").innerHTML=kraj_1.capital
+    document.getElementById("1").innerHTML=kraj_2.capital
+    document.getElementById("2").innerHTML=kraj_3.capital
+    document.getElementById("3").innerHTML=kraj_4.capital
     document.getElementById(los_sto()).innerHTML=kraj.capital
     
     console.log("stolica to -- "+kraj.capital)
@@ -133,10 +133,10 @@ function spr1(){
         proby--
         sto_kon()
         while(proby<=0){
-            document.getElementById("1").innerHTML=""
-            document.getElementById("2").innerHTML=""
-            document.getElementById("3").innerHTML=""
-            document.getElementById("4").innerHTML=""
+            document.getElementById("0").hidden="button"
+            document.getElementById("3").hidden="button"
+            document.getElementById("1").hidden="button"
+            document.getElementById("2").hidden="button"
         }
     }
 }
@@ -149,10 +149,10 @@ function spr2(){
         proby--
         sto_kon()
         while(proby<=0){
-            document.getElementById("1").innerHTML=""
-            document.getElementById("2").innerHTML=""
-            document.getElementById("3").innerHTML=""
-            document.getElementById("4").innerHTML=""
+            document.getElementById("0").hidden="button"
+            document.getElementById("3").hidden="button"
+            document.getElementById("1").hidden="button"
+            document.getElementById("2").hidden="button"
         }
     }
 }
@@ -165,10 +165,10 @@ function spr3(){
         proby--
         sto_kon()
         while(proby<=0){
-            document.getElementById("1").innerHTML=""
-            document.getElementById("2").innerHTML=""
-            document.getElementById("3").innerHTML=""
-            document.getElementById("4").innerHTML=""
+            document.getElementById("0").hidden="button"
+            document.getElementById("3").hidden="button"
+            document.getElementById("1").hidden="button"
+            document.getElementById("2").hidden="button"
         }
     }
 }
@@ -181,10 +181,10 @@ function spr4(){
         proby--
         sto_kon()
         while(proby<=0){
-            document.getElementById("1").innerHTML=""
-            document.getElementById("2").innerHTML=""
-            document.getElementById("3").innerHTML=""
-            document.getElementById("4").innerHTML=""
+            document.getElementById("0").hidden="button"
+            document.getElementById("3").hidden="button"
+            document.getElementById("1").hidden="button"
+            document.getElementById("2").hidden="button"
         }
     }
 }
