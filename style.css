@@ -10,20 +10,20 @@ body{
 }
 #div1{
     grid-area: "jeden";
-    background-color: rgb(39, 24, 41);
+    background-color: maroon;
     color: deepskyblue;
     border: 2px solid black;
 }
 #div2{
     grid-area: "dwa";
-    background-color: rgb(27, 44, 44);
+    background-color: darkgreen;
     border: 2px solid black;
     color: aqua;
 }
 #div3{
     grid-area: "trzy";
     display: flex;
-    background-color: rgb(16, 16, 71);
+    background-color: darkslateblue;
     border-top: 2px solid black;
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@ body{
 }
 #div4{
     grid-area: "cztery";
-    background-color: rgb(16, 16, 71);
+    background-image: linear-gradient(darkgreen, darkslateblue);
     border: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -49,9 +49,3 @@ body{
     border: 2px solid aquamarine;
     width: 300px;
 }
-/*.good{
-
-}
-.bad{
-
-}*/
